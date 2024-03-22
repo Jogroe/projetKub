@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: flask-deployment-dn
+  name: flask-deployment-jolu
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: flask-dn
+      app: flask-jolu
   template:
     metadata:
       labels:
-        app: flask-dn
+        app: flask-jolu
     spec:
       containers:
-      - name: flask-container-dn
+      - name: flask-container-jolu
         image: jonasgroetschel/flask-actions-project:latest
         ports:
         - containerPort: 7897

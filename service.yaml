@@ -5,9 +5,9 @@ metadata:
 spec:
   selector:
     app: flaskjl
-  type: LoadBalancer
   ports:
   - name: flask-service-port
     protocol: TCP
     port: 80
     targetPort: 5000
+  type: LoadBalancer

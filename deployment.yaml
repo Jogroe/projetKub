@@ -6,14 +6,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: flask-jolu
+      app: flaskjl
   template:
     metadata:
       labels:
-        app: flask-jolu
+        app: flaskjl
     spec:
       containers:
       - name: flask-container-jolu
         image: jonasgroetschel/jolu-projet:latest
         ports:
-        - containerPort: 7897
+        - containerPort: 5000

@@ -4,10 +4,10 @@ metadata:
   name: flask-service-jolu
 spec:
   selector:
-    app.kubernetes.io/name: flask-jolu
+    app: flaskjl
   type: LoadBalancer
   ports:
   - name: flask-service-port
     protocol: TCP
-    port: 7897
+    port: 80
     targetPort: 5000

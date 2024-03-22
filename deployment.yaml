@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: flask-deployment-jolu
+  name: flask-jolu
 spec:
   replicas: 3
   selector:

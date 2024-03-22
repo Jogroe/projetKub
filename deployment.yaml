@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: flask-container-jolu
-        image: jonasgroetschel/flask-actions-project:latest
+        image: jonasgroetschel/jolu-projet:latest
         ports:
         - containerPort: 7897

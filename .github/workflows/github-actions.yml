@@ -1,5 +1,5 @@
 env:
-  image: "jonasgroetschel/flask-action-projet:latest"
+  image: "jonasgroetschel/jolu-projet:latest"
 
 name: Build projetKube
 

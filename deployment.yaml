@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: flask-deployment-dn
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flask-dn
+  template:
+    metadata:
+      labels:
+        app: flask-dn
+    spec:
+      containers:
+      - name: flask-container-dn
+        image: jonasgroetschel/flask-actions-project:latest
+        ports:
+        - containerPort: 7897

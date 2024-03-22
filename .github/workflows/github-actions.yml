@@ -17,7 +17,7 @@ jobs:
 
       - name: azure login
         run: |
-          az login --use-device-code
+          az login -u ${{ secrets.AZURE_CLIENT_ID }} --service-principal -p ${{ secrets.AZURE_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
           az account set --subscription ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           az aks get-credentials --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --name ${{ secrets.AZURE_CLUSTER_NAME }}
 

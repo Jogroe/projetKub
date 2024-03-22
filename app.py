@@ -6,7 +6,7 @@ data = []
 
 @app.route('/')
 def hello():
-    return f'Hello wolrd !'
+    return f'Hello world !'
 
 @app.route('/get', methods=['GET'])
 def get_data():

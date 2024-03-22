@@ -1,1 +1,1 @@
-un dernier espoir pour les humains
+Projet réalisé par Jonas Groetschel et Ludovic Gauvin
